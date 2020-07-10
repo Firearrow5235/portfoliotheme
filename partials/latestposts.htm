@@ -1,0 +1,29 @@
+description = "Latest posts section of the Home page"
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+  function onStart()
+  {
+    $this['posts'] = Post::orderBy('published_at', 'desc')->get()->take(5);
+  }
+?>
+==
+<div class="row">
+  <h1>Latest Posts</h1>
+  <div class="container">
+  {% for post in posts %}
+    <div class="post-preview">
+      <a href="/post/{{ post.slug }}"><h2>{{ post.title }}</h2></a>
+      <p>{{ post.excerpt }}</p>
+      <span class="post-info">Posted to
+        {% for category in post.categories %}
+          <a href="/category/{{ category.slug }}">{{ category.name }}</a>
+          {% if not loop.last %},
+          {% endif %}
+        {% endfor %}
+        on {{ post.published_at|date('M d, Y') }}</span>
+    </div>
+  {% endfor %}
+  </div>
+</div>

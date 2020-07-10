@@ -525,8 +525,8 @@ p {
   color: #F8F4E3;
 }
 
-.contact {
-  border-top: 1px solid #8896AB;
+.contact h1 {
+  text-align: center;
 }
 
 .navbar .container, .navbar .container-lg {
