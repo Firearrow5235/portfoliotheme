@@ -483,6 +483,7 @@ h3 {
 
 p {
   font-size: 1.4rem;
+  margin: 0px;
 }
 
 .main {
@@ -527,6 +528,16 @@ p {
 
 .contact h1 {
   text-align: center;
+}
+
+.footer-content {
+  background-color: #FF773D;
+}
+
+.footer-copyright {
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #3A5A40;
 }
 
 .navbar .container, .navbar .container-lg {
