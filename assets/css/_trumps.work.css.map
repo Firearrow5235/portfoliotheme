@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "_trumps.work.css",
+	"sources": [
+		"../sass/_trumps.work.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,YAAY,CAAC;EACT,gBAAgB,EAAE,oDAAoD;CACzE;;AAED,AAAA,SAAS,CAAC;EACN,gBAAgB,EAAE,6BAA6B;CAClD;;AAED,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAE,2BAA2B;CAChD"
+}

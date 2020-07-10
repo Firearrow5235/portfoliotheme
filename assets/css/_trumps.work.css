@@ -1,0 +1,13 @@
+#pixelshades {
+  background-image: url("{{ 'assets/images/pixelshades.jpg' | theme }}");
+}
+
+#fcc_indy {
+  background-image: url("../images/fcc_indy.jpg");
+}
+
+#larrys {
+  background-image: url("../images/larrys.jpg");
+}
+
+/*# sourceMappingURL=_trumps.work.css.map */

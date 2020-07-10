@@ -1,0 +1,24 @@
+title = "Category"
+url = "/category/:slug/:page?"
+layout = "default"
+is_hidden = 0
+
+[blogPosts]
+categoryFilter = "{{ :slug }}"
+postsPerPage = "10"
+==
+<?php
+function onEnd() {
+  if ($this->category) {
+    $this->page->title = $this->category->name;
+  }
+}
+?>
+==
+{% if not category %}
+  <h1>Category not found<h1>
+{% else %}
+  <h1>{{ category.name }}</h1>
+
+  {% component 'blogPosts' %}
+{% endif %}

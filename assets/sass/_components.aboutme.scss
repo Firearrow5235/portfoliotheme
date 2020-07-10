@@ -1,0 +1,29 @@
+//main: app.scss
+
+.about-me {
+  padding-top: 1.3rem;
+  border-right: 1px solid $colorBorder;
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: 0px auto;
+    width: 150px;
+    height: 150px;
+    border: 2px solid $colorBorder;
+    border-radius: 90px;
+    background-position: -95px -40px;
+    background-size: 300px 300px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
