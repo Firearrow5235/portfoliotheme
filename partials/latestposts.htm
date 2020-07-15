@@ -9,21 +9,11 @@ use RainLab\Blog\Models\Post;
   }
 ?>
 ==
-<div class="row">
-  <h1>Latest Posts</h1>
-  <div class="container">
+<div>
+  <h1 class="text-center text-md-left">Latest Posts</h1>
+  <div class="container-fluid">
   {% for post in posts %}
-    <div class="post-preview">
-      <a href="/post/{{ post.slug }}"><h2>{{ post.title }}</h2></a>
-      <p>{{ post.excerpt }}</p>
-      <span class="post-info">Posted to
-        {% for category in post.categories %}
-          <a href="/category/{{ category.slug }}">{{ category.name }}</a>
-          {% if not loop.last %},
-          {% endif %}
-        {% endfor %}
-        on {{ post.published_at|date('M d, Y') }}</span>
-    </div>
+    {% partial 'postexcerpt' post=post %}
   {% endfor %}
   </div>
 </div>

@@ -2,22 +2,22 @@ title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
+[contactForm]
 ==
 <div class="row section-wrapper">
-  <div class="col-lg-3 col-md-4 col-sm-12 about-me">
+  <div class="col-lg-3 col-md-4 col-sm-12 pt-3 about-me">
     {% partial "aboutme" %}
   </div>
-  <div class="col-lg-9 col-md-8 col-sm-12">
-    <div class="container">
-      {% partial "latestposts" %}
-      {% partial "recentwork" %}
-    </div>
+  <div class="col-lg-9 col-md-8 col-sm-12 pt-2">
+    {% partial "latestposts" %}
+    {% partial "recentwork" %}
   </div>
 </div>
 <div class="row section-wrapper contact">
   <div class="col-lg-3"></div>
   <div class="col-lg-6">
-    {% partial "contact" %}
+    <h1>Contact Me</h1>
+    {% component 'contactForm' %}
   </div>
   <div class="col-lg-3"></div>
 </div>

@@ -1,7 +1,10 @@
 //main: app.scss
 
-.post-preview {
+.post-excerpt {
+  border-top: 1px dashed $colorBorder;
+
   span {
+    font-size: .8rem;
     color: $colorText;
   }
 }

@@ -1,11 +1,24 @@
 //main: app.scss
-.footer-content {
-  background-color: $colorOrange;
+.footer-copyright {
+  height: $footerHeight;
+
+  p {
+    line-height: $footerHeight;
+    margin: 0;
+  }
+
+  a:hover {
+    color: $colorText;
+  }
 }
 
-.footer-copyright {
-  height: 4rem;
-  line-height: 4rem;
-  background-color: $colorGreen;
+.footer-links {
+  ul {
+    margin: 0px;
 
+    li {
+      height: $footerHeight;
+      line-height: $footerHeight;
+    }
+  }
 }

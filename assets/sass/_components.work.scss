@@ -3,8 +3,8 @@
 .work-piece {
     display: inline-block;
     box-sizing: border-box;
-    width: 250px;
-    height: 250px;
+    width: $workPieceSize;
+    height: $workPieceSize;
     margin: 12px;
     vertical-align: top;
     vertical-align: bottom;

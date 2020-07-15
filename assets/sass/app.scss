@@ -5,8 +5,9 @@
 //tools - Mixins and Sass Functions
 
 //generic - Normalize and Box-Sizing Definitions
-@import "generic.boxsizing";
-@import "generic.normalize";
+//@import "generic.normalize";
+//Bootstrap
+@import "bootstrap-4.5.0/scss/bootstrap";
 
 //elements - Styling for HTML tags
 @import "elements.blocks";
