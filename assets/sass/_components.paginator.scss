@@ -1,0 +1,12 @@
+//main: app.scss
+
+.pagination {
+  color: $colorText;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  li {
+    padding: 0px 5px;
+  }
+}

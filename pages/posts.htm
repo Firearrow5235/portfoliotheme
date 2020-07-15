@@ -1,0 +1,22 @@
+title="All Posts"
+url = "/posts"
+layout = "blog"
+is_hidden = 0
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+  function onStart()
+  {
+    $this['posts'] = Post::orderBy('published_at', 'desc')->paginate(10);
+  }
+?>
+==
+<h1>All Posts</h1>
+<div class="container">
+  {% for post in posts %}
+    {% partial 'postexcerpt' post=post %}
+  {% endfor %}
+
+  {{ posts.render | raw }}
+</div>

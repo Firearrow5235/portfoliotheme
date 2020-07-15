@@ -1,5 +1,14 @@
 description = "The default layout of all blog related pages"
 ==
+<?php
+use RainLab\Blog\Models\Category;
+
+  function onStart()
+  {
+    $this['categories'] = Category::orderBy('name', 'asc')->get();
+  }
+?>
+==
 <html>
   <head>
     <meta charset="UTF-8">
@@ -13,8 +22,13 @@ description = "The default layout of all blog related pages"
 
     <div class="container-lg">
       <div class="row section-wrapper">
-        <div class="col-lg-3 col-md-4 col-sm-12 pt-3 about-me">
-
+        <div class="col-lg-3 col-md-4 col-sm-12 pt-3 min-vh-100 about-me">
+          <h3>Categories</h3>
+          <ul class="text-text">
+            {% for category in categories %}
+              <li><a href="/category/{{ category.name }}">{{ category.name }}</a></li>
+            {% endfor %}
+          </ul>
         </div>
         <div class="col-lg-9 col-md-8 col-sm-12 pt-2">
           {% page %}
