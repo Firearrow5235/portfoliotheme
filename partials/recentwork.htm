@@ -2,33 +2,28 @@ description = "Recent Work section of the Home page"
 ==
 <div>
   <h1 class="text-center text-md-left">Recent Work</h1>
-  <div class="container d-flex flex-wrap justify-content-around">
-    <div class="work-piece" style="background-image: url({{ 'assets/images/pixelshades.jpg' | theme }})">
-        <a href="http://thepixelshades.com" target="_blank">
-            <div class="work-description">
-                <h3>PixelShades Website</h3>
-                <p>Role - Designer/Developer</p>
-                <p>A website I built for a long running personal project of mine. The website back-end I designed is capable of full blog-like functionality, and it handles podcast files with ease. It may not look like much but it's got it where it counts!</p>
-            </div>
-        </a>
+  <div class="py-3 work">
+    <a href="http://thepixelshades.com" target="_blank" rel="noopener noreferrer"><h2>PixelShades Productions</h2></a>
+    <div class="container">
+      <img src="{{ 'assets/images/pixelshades.jpg' | theme }}" alt="Image of PixelShades Productions Website">
+      <p>Role - Designer/Developer</p>
+      <p>A website I built for a long running personal project of mine. The website back-end I designed is capable of full blog-like functionality, and it handles podcast files with ease. It may not look like much but it's got it where it counts!</p>
     </div>
-    <div class="work-piece" style="background-image: url({{ 'assets/images/fcc_indy.jpg' | theme }})">
-        <a href="http://freecodecampindy.com/campers.html" target="_blank">
-            <div class="work-description">
-                <h3>FreeCodeCamp Indy Website</h3>
-                <p>Role - Developer</p>
-                <p>The website for the FreeCodeCamp Indy group. My work consists of the "Campers" page as well has helping with the overall code design.</p>
-            </div>
-        </a>
+  </div>
+  <div class="py-3 work">
+    <a href="http://freecodecampindy.com/campers.html" target="_blank" rel="noopener noreferrer"><h2>FreeCodeCamp Indy</h2></a>
+    <div class="container">
+      <img src="{{ 'assets/images/fcc_indy.jpg' | theme }}" alt="Image of PixelShades Productions Website">
+      <p>Role - Developer</p>
+      <p>The website for the FreeCodeCamp Indy group. My work consists of the "Campers" page as well has helping with the overall code design.</p>
     </div>
-    <div class="work-piece" style="background-image: url({{ 'assets/images/larrys.jpg' | theme }})">
-        <a href="http://larrystreefarm.com" target="_blank">
-            <div class="work-description">
-                <h3>Larry's Tree Farm Website</h3>
-                <p>Role - Designer/Developer</p>
-                <p>One of first websites I did after taking web development in college. At the time I thought percentages were the end-all be-all of responsiveness. I've come a long way since and I hope to go back and redesign this one.</p>
-            </div>
-        </a>
+  </div>
+  <div class="py-3 work">
+    <a href="http://larrystreefarm.com" target="_blank" rel="noopener noreferrer"><h2>Larry's Tree Farm</h2></a>
+    <div class="container">
+      <img src="{{ 'assets/images/larrys.jpg' | theme }}" alt="Image of PixelShades Productions Website">
+      <p>Role - Designer/Developer</p>
+      <p>One of first websites I did after taking web development in college. At the time I thought percentages were the end-all be-all of responsiveness. I've come a long way since and I hope to go back and redesign this one.</p>
     </div>
   </div>
 </div>
