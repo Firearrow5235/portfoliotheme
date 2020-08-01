@@ -13,10 +13,8 @@ use RainLab\Blog\Models\Post;
 ?>
 ==
 <h1>All Posts</h1>
-<div class="container">
-  {% for post in posts %}
-    {% partial 'postexcerpt' post=post %}
-  {% endfor %}
+{% for post in posts %}
+  {% partial 'postexcerpt' post=post %}
+{% endfor %}
 
-  {{ posts.render | raw }}
-</div>
+{% partial 'postpagination' posts=posts %}

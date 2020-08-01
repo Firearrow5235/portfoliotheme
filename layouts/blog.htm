@@ -23,12 +23,7 @@ use RainLab\Blog\Models\Category;
     <div class="container-lg">
       <div class="row section-wrapper min-vh-100">
         <div class="col-lg-3 col-md-4 col-sm-12 pt-3 about-me">
-          <h3>Categories</h3>
-          <ul class="text-text">
-            {% for category in categories %}
-              <li><a href="/category/{{ category.name }}">{{ category.name }}</a></li>
-            {% endfor %}
-          </ul>
+          {% partial 'blogfilters' categories=categories %}
         </div>
         <div class="col-lg-9 col-md-8 col-sm-12 pt-2">
           {% page %}

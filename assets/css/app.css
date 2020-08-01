@@ -9918,6 +9918,11 @@ p {
   background-color: #ff5c17;
 }
 
+.form-control:focus {
+  border-color: #FF773D;
+  box-shadow: 0 0 0 0.15rem #ff773d;
+}
+
 .footer-copyright {
   height: 4rem;
 }

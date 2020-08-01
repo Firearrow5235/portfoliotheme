@@ -1,0 +1,31 @@
+{% if posts.hasPages %}
+  <ul class="pagination">
+    <li>
+      {% if posts.currentPage > 1 %}
+        <a href="{{ posts.previousPageUrl }}" rel="prev">&larr; Prev</a>
+      {% else %}
+        <span class="disabled">&larr; Prev</span>
+      {% endif %}
+    </li>
+
+    {% for page in range(1, posts.lastPage) %}
+      {% if (page == posts.currentPage) %}
+        <li>
+          <a class="disabled">{{ page }}</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ posts.url(page) }}">{{ page }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+      <li>
+      {% if posts.hasMorePages %}
+        <a href="{{ posts.nextPageUrl }}" rel="next">Next &rarr;</a>
+      {% else %}
+        <span class="disabled">Next &rarr;</span>
+      {% endif %}
+    </li>
+  </ul>
+{% endif %}
